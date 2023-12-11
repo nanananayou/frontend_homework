@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .hello {
+            width:600px; height:150px;
+            margin: 0 auto; /* 수평 중앙 정렬 */
+            background-color: white;
+            border:10px solid gray;
+            padding: 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .redd{
+            color:red;
+            font-weight: bold;
+        }
+        .solid{
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+        <label><input type="radio" name="check" value="id">아이디 찾기</label>
+        <label><input type="radio" name="check" value="password">비밀번호 찾기</label>
+    </div>
+
+    </select>
+    <div class="hello">
+        <label for="id"><span class="redd">></span>이름(대표자명)</label>
+        <input type="text" id="id" size="30"> 
+        <br/>
+        <label for="phonenum"><span class="redd">></span></label>
+                <select id="phonenum">
+                    <option>휴대전화</option>
+                </select>
+        <label><input type="text" size=5>-</label>
+        <label><input type="text" size=5>-</label>
+        <label><input type="text" size=5></label>
+        <hr style="border:1px dotted;" class="solid">
+
+        아이디를 찾기 위해서 이름과 휴대번호 혹은 이메일을 입력하세요.
+
+
+    </div>
+  
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;}
+        .c_imp{color:red;}
+        .userTable{width:700px; border: none; 
+            border-collapse: collapse;}
+        .userTable td{border:1px solid black;padding: 5px;}
+        .userTable td.userTit{background-color: #e4e6e9;
+            font-weight: bold;}
+        input, select, button {border: 1px solid #afafaf;}
+        .userInput{padding: 3px 2px;}
+        .btn_basic{background-color: #3d3d3d;color: #ffffff;
+            height: 23px;width: 70px;}
+        .btn_basic:hover{background-color: #dddddd;
+            color: #afafaf;}
+        .word{color:gray;}
+        .word2{color: black}
+    </style>
+    
+</head>
+<body>
+    
+    <table class="userTable">
+        <tr>
+            <td class="userTit"><span class="c_imp">*</span> 아이디</td>
+            <td class="word">
+                <label for="id"></label>
+                <input type="text" id="id" size=15>
+                <button type="button" class="btn_basic">중복확인</button>
+                + 4~15자, 첫 영문자, 영문자와 숫자 조합
+            </td>
+        </tr>
+        <tr>
+            <td class="userTit"><span class="c_imp">*</span> 비밀번호</td>
+            <td> 
+                <label for="pw"></label>
+                <input type="password" id="password" size=10>
+            </td>
+        </tr>
+        <tr>
+            <td class="userTit"><span class="c_imp">*</span> 비밀번호 확인</td>
+            <td class="word">
+                <label for="pwcheck"></label>
+                <input type="password" id="pwcheck" size=10>
+                (확인을 위해 다시 입력해 주세요.)
+            </td>
+        </tr>
+        <tr>
+            <td class="userTit"><span class="c_imp">*</span> 이름</td>
+            <td>
+                <label for="name"></label>
+                <input type="text" id="name">
+            </td>
+        </tr>
+        <tr>
+            <td class="userTit"><span class="c_imp">*</span> 생년월일</td>
+            <td class="word">
+                <label class="word2"><input type="radio" name="gender" value="man">남자</label>
+                <label class="word2"><input type="radio" name="gender" value="woman">여자</label>
+                <label class="word2"><input type="text" size=8>년</label>
+                <label class="word2"><input type="text" size=8>월</label>
+                <label class="word2"><input type="text" size=8>일</label>
+                (예: 2000년 01월 31일)
+            </td>
+        </tr>
+        <tr>
+            <td class="userTit" rowspan="2"><span class="c_imp">*</span> 이메일</td>
+            <td>
+                <label class="word2"><input type="text" size=8>@</label>
+                <label class="word2"><input type="text" size=8></label>
+                <label for="email"></label>
+                <select id="email">
+                    <option>직접입력</option>
+                </select>
+                <label class="word2"><input type="radio" name="message" value="agree">수신허용</label>
+                <label class="word2"><input type="radio" name="message" value="disagree">수신불가</label>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <!-- <td class="userTit"></td> -->
+            <td class="word">※ hanmail.net은 메일 수신이 어려울 수 있으니 가급적 다른 메일을 이용하시기 바랍니다.</td>
+        </tr>
+        <tr>
+            <td class="userTit" rowspan="3"><span class="c_imp">*</span> 주소</td>
+            <td>
+                <button type="button" class="btn_basic">주소찾기</button>
+                <label class="word2"><input type="text"></label>
+                (우편번호)
+            </td>
+        </tr>
+        <tr>
+            <!-- <td class="userTit"></td> -->
+            <td>
+                <label><input type="text" size=50></label>
+            </td>
+        </tr>
+        <tr>
+            <!-- <td class="userTit"></td> -->
+            <td>
+                <label><input type="text"></label>
+                + 나머지 주소
+            </td>
+        </tr>
+        <tr>
+            <td class="userTit"> 전화번호</td>
+            <td>
+                <label class="word2"><input type="text" size=8>-</label>
+                <label class="word2"><input type="text" size=8>-</label>
+                <label class="word2"><input type="text" size=8></label>
+            </td>
+        </tr>
+        <tr>
+            <td class="userTit"><span class="c_imp">*</span> 휴대전화</td>
+            <td>
+                <label><input type="text" size=8>-</label>
+                <label><input type="text" size=8>-</label>
+                <label><input type="text" size=8></label>
+                <label><input type="radio" name="ms" value="agree">SMS수신허용</label>
+                <label><input type="radio" name="ms" value="disagree">SMS수신불가</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="userTit"><span class="c_imp">*</span> 관심분야</td>
+            <td>
+                <label for="hobby"></label>
+                <select id="hobby">
+                    <option>:: 관심분야선택 ::</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="userTit"><span class="c_imp">*</span> 가입경로</td>
+            <td>
+                <label for="path"></label>
+                <select id="path">
+                    <option>:: 가입경로선택 ::</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

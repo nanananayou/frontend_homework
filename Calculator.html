@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        table{
+            border:1px solid #c7c7c7;
+            background-color:#dddddd;
+            border-radius:10px;
+            width: 600px;
+            height: 120px;
+        }
+        button, input{
+            border:1px solid #dddddd; 
+            border-radius:10px;
+            font-size:1.5em; height:50px;
+            color:#ffffff;
+        }
+        .key_type1{
+            width:300px; background-color:#7b7b7b;
+            color:white; font-weight: bold;
+            text-align: center; border-radius: 20px;
+            padding:1px;
+            height: 20px;
+           
+        }
+        .key_type2{
+		width:150px; background-color:#373737;
+        color:white; font-weight: bold;
+        text-align: center; border-radius: 15px;
+        padding:1px;
+        height:20px;
+	}
+	.key_type3{
+		width:150px; background-color:#fa960a;
+        color:white; text-align: center;
+        border-radius: 20px; padding:2px;
+        height:20px;
+	}
+	#lcd{
+		background-color:#70c738; font-size:40px;
+		color:#373737; font-weight:bold; 
+		text-align:right; border-radius:15px;
+		padding:25px;	
+        width: 150px;
+        height: 20px;
+	}
+	h2{
+		text-align:center;
+	}
+</style>
+   
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="4" id="lcd">123+654</td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td colspan="2" class="key_type1"><h2>BackSpace</h2></td>
+            <!-- <td></td> -->
+            <td colspan="2" class="key_type1"><h2>C</h2></td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td class="key_type2"><h2>1</h2></td>
+            <td class="key_type2"><h2>2</h2></td>
+            <td class="key_type2"><h2>3</h2></td>
+            <td class="key_type3"><h2>/</h2></td>
+        </tr>
+        <tr>
+            <td class="key_type2"><h2>4</h2></td>
+            <td class="key_type2"><h2>5</h2></td>
+            <td class="key_type2"><h2>6</h2></td>
+            <td class="key_type3"><h2>X</h2></td>
+        </tr>
+        <tr>
+            <td class="key_type2"><h2>7</h2></td>
+            <td class="key_type2"><h2>8</h2></td>
+            <td class="key_type2"><h2>9</h2></td>
+            <td class="key_type3"><h2>+</h2></td>
+        </tr>
+        <tr>
+            <td class="key_type2"><h2>=</h2></td>
+            <td class="key_type2"><h2>0</h2></td>
+            <td class="key_type2"><h2>.</h2></td>
+            <td class="key_type3"><h2>-</h2></td>
+        </tr>
+    </table>
+
+    
+</body>
+</html>
